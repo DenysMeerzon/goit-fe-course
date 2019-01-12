@@ -23,21 +23,19 @@ body {
 .link-item {
   text-decoration: none;
 }
-.wrapper-list {
+.container {
   width: 470px;
   margin: 0 auto;
   border: 1px solid grey;
   margin-bottom: 50px;
   padding: 25px;
 }
+.article-news {
+  width: 420px;
+}
 .wrapper-item {
   list-style: none;
   display: inline-block;
-}
-.article-title,
-.article-text,
-.article-news {
-  width: 420px;
 }
 .wrapper-news__list {
   width: 960px;
