@@ -9,6 +9,11 @@ html {
 body {
   font-family: "Playfair Display", serif;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   text-align: center;
 }
@@ -33,9 +38,21 @@ body {
 .article-news {
   width: 420px;
 }
-.wrapper-item {
-  list-style: none;
-  display: inline-block;
+.article-image {
+  margin-bottom: 30px;
+}
+.article-title__text {
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+.article-title {
+  margin: 0 0 30px 0;
+}
+.article-text {
+  margin: 0;
+}
+.wrapper-news {
+  margin-bottom: 50px;
 }
 .wrapper-news__list {
   width: 960px;
@@ -51,4 +68,8 @@ body {
 }
 .wrapper-news__item:first-child {
   margin-right: 38px;
+}
+.info {
+  margin: 0 auto;
+  text-align: left;
 }
