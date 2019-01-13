@@ -1,0 +1,51 @@
+.wrapper {
+}
+.list {
+  margin: 0 auto;
+  width: 450px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item {
+  list-style: none;
+  color: #0e1116;
+  float: left;
+}
+.item:not(:last-child) {
+  margin-right: 15px;
+}
+.item-child:nth-child(3n) {
+  background-color: #88292f;
+}
+.item-child:nth-child(3n - 1) {
+  background-color: #5db7de;
+}
+.item-child:nth-child(3n - 2) {
+  background-color: #0d5d56;
+}
+.item:hover {
+  color: red;
+  cursor: pointer;
+}
+.item-arrows::before {
+  content: "\2192";
+}
+.item-increment {
+  list-style: none;
+  counter-increment: count-box;
+  font-size: 18px;
+  height: 30px;
+}
+.item-increment::before {
+  content: counter(count-box, upper-roman);
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  display: inline-block;
+}
