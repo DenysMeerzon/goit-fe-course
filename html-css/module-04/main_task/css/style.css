@@ -106,3 +106,16 @@ img {
 .link-product {
   display: block;
 }
+.link-product__wrapper {
+  height: 282px;
+  width: 255px;
+}
+/* .img-product {
+  height: 282px;
+} */
+/* .img-product__five {
+  padding: 13px 29px 0 29px;
+}
+.img-product__eight {
+  padding: 97px 13px 0 13px;
+} */
