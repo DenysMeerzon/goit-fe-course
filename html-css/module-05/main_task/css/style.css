@@ -1,0 +1,14 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
