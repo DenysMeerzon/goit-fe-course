@@ -1,0 +1,114 @@
+/* task #1 */
+.picture {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../img/nature.jpg);
+  background-repeat: no-repeat;
+  height: 1200px;
+  width: 1600px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 200px;
+}
+/* task #2 */
+.blocks {
+  width: 400px;
+  height: 400px;
+  background-color: #424242;
+  position: relative;
+}
+.block-size {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.one {
+  background-color: blue;
+  left: 0;
+  top: 0;
+}
+.two {
+  background-color: green;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.three {
+  background-color: red;
+  left: 300px;
+}
+.four {
+  background-color: white;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.five {
+  background-color: orange;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.six {
+  background-color: purple;
+  left: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.seven {
+  background-color: pink;
+  top: 300px;
+  left: 0;
+}
+.eight {
+  background-color: yellow;
+  left: 50%;
+  top: 300px;
+  transform: translateX(-50%);
+}
+.nine {
+  background-color: black;
+  top: 300px;
+  left: 300px;
+}
+/* task #3 */
+.wrapper {
+  width: 400px;
+  height: 250px;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item-menu,
+.sub-menu {
+  list-style: none;
+}
+.item-menu {
+  float: left;
+  position: relative;
+}
+.item-menu:not(:last-child) {
+  margin-right: 15px;
+}
+.link-menu,
+.link-sub__menu {
+  text-decoration: none;
+  display: inline-block;
+  color: black; 
+}
+.sub-menu {
+  position: absolute;
+  padding: 0;
+  display: none;
+}
+.sub-menu__item {
+  padding: 0;
+  white-space: nowrap;
+}
+.item-menu:hover .sub-menu {
+  display: block;
+}
