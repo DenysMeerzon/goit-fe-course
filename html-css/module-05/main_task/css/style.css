@@ -8,7 +8,33 @@ html {
 *::before {
   box-sizing: inherit;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .container {
-    width: 1110px;
-    margin: 0 auto;
+  width: 1110px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+}
+.link-logo {
+  text-decoration: none;
+  display: block;
+}
+.link-logo::first-letter {
+  color: #1abc9c;
+}
+.list-nav {
+  float: right;
+}
+.item-nav {
+  list-style: none;
+  float: left;
+}
+.link-nav {
+  text-decoration: none;
+  display: block;
 }
