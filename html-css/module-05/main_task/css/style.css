@@ -1,5 +1,4 @@
-/* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
+@import "./vars.css";
 html {
   box-sizing: border-box;
 }
@@ -7,6 +6,11 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .clearfix::after {
   content: "";
@@ -17,24 +21,52 @@ html {
   width: 1110px;
   margin: 0 auto;
 }
+.site-header {
+  padding: 38px 0 34px 0;
+}
 .logo {
   float: left;
+  margin: 0;
 }
 .link-logo {
   text-decoration: none;
   display: block;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: var(--semi-main-font);
+  color: var(--semi-font-color);
 }
 .link-logo::first-letter {
-  color: #1abc9c;
+  color: var(--hover-main-color);
 }
 .list-nav {
   float: right;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
 }
 .item-nav {
   list-style: none;
   float: left;
 }
+.item-nav:not(:last-child) {
+  margin-right: 34px;
+}
 .link-nav {
   text-decoration: none;
   display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: var(--main-font);
+  font-weight: 900;
+  color: var(--main-font-color);
+}
+.link-nav:hover {
+  cursor: pointer;
+  color: var(--hover-main-color);
+}
+.banner {
+  background: url(../img/slider.jpg);
+  width: 1600px;
+  height: 600px;
 }
