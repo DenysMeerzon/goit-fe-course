@@ -46,9 +46,9 @@ input[type="radio"].visually-hidden {
 }
 .link-logo {
   display: block;
-  font-family: "Open Sans", sans-serif, serif;
-  color: #555252;
+  font-family: "OpenSans", sans-serif, serif;
   font-weight: 300;
+  color: #555252;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
@@ -59,7 +59,7 @@ input[type="radio"].visually-hidden {
 }
 .site-nav {
   float: right;
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .list-nav {
   padding: 0;
@@ -73,11 +73,13 @@ input[type="radio"].visually-hidden {
   margin-right: 32px;
 }
 .link-nav {
+  display: block;
   text-decoration: none;
-  font-family: "Roboto", sans-serif, serif;
+  font-family: "OpenSans", sans-serif, serif;
   color: #0f0101;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .link-nav:hover,
 .link-nav:target {
@@ -232,3 +234,5 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   cursor: pointer;
 }
+
+

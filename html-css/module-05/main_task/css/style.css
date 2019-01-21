@@ -65,8 +65,83 @@ img {
   cursor: pointer;
   color: var(--hover-main-color);
 }
-.banner {
+.slider {
   background: url(../img/slider.jpg);
-  width: 1600px;
   height: 600px;
+  position: center;
+}
+.slider-block {
+  height: 600px;
+  position: relative;
+}
+.slider-ctrl {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  width: 104px;
+  height: 104px;
+  position: absolute;
+}
+.slider-ctrl-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(26, 188, 156, 0.65);
+}
+.slider-ctrl-next {
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  background-color: rgba(26, 188, 156, 1);
+}
+.fas {
+  color: #ffffff;
+}
+.slides {
+  margin: 0;
+  padding: 0;
+}
+.item-slides {
+  list-style: none;
+  position: relative;
+}
+.title-slides {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #ffffff;
+  position: absolute;
+  margin: 0;
+}
+.text-slides {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* .AFFORDABLE_PARIS_TOURS_CITY_TOURS___TOUR_TICKET {
+  font-size: 60px;
+  font-family: "Roboto";
+  color: rgb(255, 114, 0);
+  text-transform: uppercase;
+  line-height: 1.367;
+  text-align: left;
+  position: absolute;
+  left: 427.937px;
+  top: 382.717px;
+  width: 738px;
+  height: 98px;
+  z-index: 74;
+} */
+. {
+  font-size: 100px;
+  font-family: "Pe";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.11;
+  text-align: right;
+  position: absolute;
+  left: 1243.937px;
+  top: 348.237px;
+  width: 22px;
+  height: 38px;
+  z-index: 84;
 }
