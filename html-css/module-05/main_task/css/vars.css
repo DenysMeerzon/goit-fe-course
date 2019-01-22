@@ -4,4 +4,10 @@
   --semi-font-color: #555252;
   --semi-main-font: "Open Sans", sans-serif, serif;
   --hover-main-color: #1abc9c;
+  --main-background-color: #e9f0fd;
+  --main-title-color: #515151;
+  --main-bggoods-color:#323232;
+  --main-goods-color: #ffffff;
+  --main-bgprice-color: rgba(255, 255, 255, 0.439);
+  --footer-bg-color: #323232;
 }

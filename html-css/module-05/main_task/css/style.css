@@ -56,9 +56,9 @@ img {
   text-decoration: none;
   display: block;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 14px;
   font-family: var(--main-font);
-  font-weight: 900;
+  font-weight: bold;
   color: var(--main-font-color);
 }
 .link-nav:hover {
@@ -66,7 +66,7 @@ img {
   color: var(--hover-main-color);
 }
 .slider {
-  background: url(../img/slider.jpg);
+  background: url("../img/slider.jpg");
   height: 600px;
   position: center;
 }
@@ -116,32 +116,78 @@ img {
   color: #ffffff;
   margin: 0;
 }
-
-/* .AFFORDABLE_PARIS_TOURS_CITY_TOURS___TOUR_TICKET {
-  font-size: 60px;
-  font-family: "Roboto";
-  color: rgb(255, 114, 0);
+.site-main {
+  height: 676px;
+  background-color: var(--main-background-color);
+}
+.section-title {
+  margin: 0;
+  padding-top: 100px;
+  font-size: 48px;
+  color: var(--main-title-color);
   text-transform: uppercase;
-  line-height: 1.367;
-  text-align: left;
-  position: absolute;
-  left: 427.937px;
-  top: 382.717px;
-  width: 738px;
-  height: 98px;
-  z-index: 74;
-} */
-. {
-  font-size: 100px;
-  font-family: "Pe";
-  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid var(--hover-main-color);
+  margin: 32px auto 80px auto;
+  width: 164px;
+}
+.section-list {
+  margin: 0;
+  padding: 0;
+}
+.section-item {
+  display: block;
+  list-style: none;
+  width: 255px;
+  height: 322px;
+  float: left;
+}
+.section-item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-link {
+  text-decoration: none;
+  display: block;
+}
+.goods {
+  width: 255px;
+  height: 40px;
+  background-color: var(--main-bggoods-color);
+}
+.name-goods {
+  width: 201px;
+  height: 40px;
+  margin: 0;
+  padding: 0 0 0 12px;
+  float: left;
+  font-size: 18px;
+  font-family: var(--main-font);
   text-transform: uppercase;
-  line-height: 0.11;
-  text-align: right;
-  position: absolute;
-  left: 1243.937px;
-  top: 348.237px;
-  width: 22px;
-  height: 38px;
-  z-index: 84;
+  color: var(--main-goods-color);
+  line-height: 40px;
+}
+.price-goods {
+  margin: 0;
+  width: 54px;
+  height: 40px;
+  float: right;
+  font-size: 18px;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  color: var(--main-goods-color);
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  background-color: var(--main-bgprice-color);
+}
+.price-goods::before {
+  content: "\0024";
+}
+.site-footer {
+  height: 88px;
+  background-color: var(--footer-bg-color);
 }
