@@ -78,7 +78,7 @@ img {
   min-height: 600px;
 }
 .slider-block {
-  height: 600px;
+  min-height: 600px;
   position: relative;
 }
 .slider-ctrl {
@@ -109,7 +109,6 @@ img {
   margin: 0;
   padding: 0;
   width: 760px;
-  height: 110px;
   position: relative;
   top: 230px;
   left: 180px;
@@ -139,12 +138,14 @@ img {
   font-size: 20px;
 }
 .site-main {
-  height: 676px;
   background-color: var(--main-background-color);
+  padding-bottom: 100px;
+}
+.site-section {
+  padding-top: 100px;
 }
 .section-title {
-  margin: 0;
-  padding-top: 100px;
+  margin: 0 0 80px 0;
   font-size: 48px;
   color: var(--main-title-color);
   text-transform: uppercase;
@@ -154,7 +155,7 @@ img {
   content: "";
   display: block;
   border-bottom: 7px solid var(--hover-main-color);
-  margin: 32px auto 80px auto;
+  margin: 32px auto 0 auto;
   width: 164px;
 }
 .section-list {
@@ -181,24 +182,29 @@ img {
 .section-img:hover .img-filter {
   display: block;
 }
+.goods-img {
+  width: 255px;
+  height: 281px;
+}
 .img-filter {
-  width: 234px;
-  height: 260px;
+  width: 235px;
+  height: 261px;
   background-color: rgba(0, 0, 0, 0.549);
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
   display: none;
-}
-.filter-menu {
-  width: 166px;
-  height: 108px;
-  margin: 76px 34px 76px 34px;
+  border: 10px solid rgba(255, 255, 255, 0.549);
+  box-sizing: content-box;
 }
 .filter-list {
   padding: 0;
+  box-sizing: border-box;
+  width: 166px;
+  height: 108px;
+  margin: 76px 34px;
 }
-.filter-list li:not(:nth-child(n + 3)) {
+.filter-list li:nth-child(-n + 2) {
   margin: 0 8px 8px 0;
 }
 .filter-list li:nth-child(3) {
@@ -208,9 +214,6 @@ img {
   float: left;
   list-style: none;
 }
-.filter-item:hover {
-  background-color: var(--hover-main-color);
-}
 .filter-item__cart {
   float: left;
   list-style: none;
@@ -218,12 +221,15 @@ img {
   height: 50px;
   background-color: var(--main-bggoods-color);
 }
-.filter-item__cart:hover {
-  background-color: var(--hover-main-color);
-}
 .filter-button {
   border: 1px solid white;
   padding: 0;
+  display: block;
+  text-decoration: none;
+}
+.filter-button:hover {
+  background-color: var(--hover-main-color);
+  border: none;
 }
 .filter-button__cart {
   width: 166px;
@@ -232,6 +238,12 @@ img {
   border: 1px solid white;
   background-color: transparent;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+.filter-button__cart:hover {
+  background-color: var(--hover-main-color);
+  border: none;
 }
 .icon-like,
 .icon-size,
@@ -271,7 +283,7 @@ img {
 }
 .goods {
   width: 255px;
-  height: 40px;
+  min-height: 40px;
   background-color: var(--main-bggoods-color);
 }
 .goods:hover {
@@ -280,7 +292,6 @@ img {
 }
 .name-goods {
   width: 201px;
-  height: 40px;
   margin: 0;
   padding: 0 0 0 12px;
   float: left;
@@ -293,7 +304,6 @@ img {
 .price-goods {
   margin: 0;
   width: 54px;
-  height: 40px;
   float: right;
   font-size: 18px;
   font-family: var(--main-font);
@@ -311,16 +321,20 @@ img {
   height: 88px;
   background-color: var(--footer-bg-color);
 }
-.All_Rights_Reserved_©_Dokan___Designed_ThemenGraph {
-  font-size: 16px;
-  font-family: "OpenSans";
-  color: rgb(254, 254, 254);
-  line-height: 1.75;
+.text-footer {
+  margin: 0;
+  padding-top: 38px;
+}
+.link-footer {
   text-align: center;
-  position: absolute;
-  left: 218.361px;
-  top: 1431.546px;
-  width: 394px;
-  height: 17px;
-  z-index: 4;
+  color: rgb(244, 244, 244);
+  font-size: 16px;
+  font-family: var(--semi-main-font);
+  margin: 0;
+  display: block;
+  text-decoration: none;
+}
+.link-footer::after {
+  content: "ThemenGraph";
+  color: var(--hover-main-color);
 }
