@@ -1,0 +1,95 @@
+@import "./vars.css";
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  margin: 0;
+}
+.link-logo {
+  text-decoration: none;
+  display: block;
+  font-family: var(--Montserrat-font);
+  font-size: 30px;
+  color: var(--header-font);
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.list-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 490px;
+  justify-content: space-between;
+}
+.item-nav {
+  list-style: none;
+}
+.link-nav {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: var(--Montserrat-font);
+  text-transform: uppercase;
+  color: var(--header-font);
+}
+.sect-title {
+  font-size: 30px;
+  font-family: var(--Montserrat-font);
+  text-transform: uppercase;
+  color: var(--section-title-font);
+  margin: 0 0 66px 0;
+  text-align: center;
+}
+.sect-title::before {
+  content: "We work with";
+  display: block;
+  font-size: 24px;
+  font-family: var(--Kaushan-font);
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.sect-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--section-title-border-font);
+  width: 60px;
+  margin: 42px auto 0 auto;
+}
+.serv-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 242px;
+  margin: 0;
+  padding: 0;
+}
+.serv-item {
+  list-style: none;
+  width: 380px;
+  height: 70px;
+}
+.serv-link {
+  text-decoration: none;
+  display: block;
+}
+
+
