@@ -240,7 +240,7 @@ img {
 }
 .filter-button__cart:hover {
   background-color: var(--hover-main-color);
-  border: none;
+  border: 1px solid var(--hover-main-color);
 }
 .icon-like,
 .icon-size,
