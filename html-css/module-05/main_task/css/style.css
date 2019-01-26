@@ -39,8 +39,10 @@ img {
 .link-logo::first-letter {
   color: var(--hover-main-color);
 }
-.list-nav {
+.site-nav {
   float: right;
+}
+.list-nav {
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -109,9 +111,10 @@ img {
   margin: 0;
   padding: 0;
   width: 760px;
-  position: relative;
-  top: 230px;
-  left: 180px;
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  transform: translateY(-50%);
   font-family: var(--main-font);
 }
 .item-slides {
@@ -123,12 +126,8 @@ img {
   color: #ffffff;
   margin: 0 0 30px 0;
 }
-.first-word:hover {
+.title-slides:hover {
   color: #ff7200;
-}
-.link-slides {
-  display: block;
-  text-decoration: none;
 }
 .text-slides {
   text-transform: uppercase;
@@ -137,12 +136,9 @@ img {
   font-family: var(--semi-main-font);
   font-size: 20px;
 }
-.site-main {
-  background-color: var(--main-background-color);
-  padding-bottom: 100px;
-}
 .site-section {
-  padding-top: 100px;
+  padding: 100px 0;
+  background-color: var(--main-background-color);
 }
 .section-title {
   margin: 0 0 80px 0;
@@ -150,6 +146,7 @@ img {
   color: var(--main-title-color);
   text-transform: uppercase;
   text-align: center;
+  font-family: var(--main-font);
 }
 .section-title::after {
   content: "";
