@@ -2,7 +2,11 @@
   --Roboto-font: "Roboto", sans-serif;
   --Montserrat-font: "Montserrat", sans-serif;
   --Kaushan-font: "Kaushan Script", cursive;
-  --header-font: #95e1d3;
-  --section-title-font: #333333;
-  --section-title-border-font: #f38181;
+  --header-color: #95e1d3;
+  --section-title-color: #333333;
+  --section-title-border-color: #f38181;
+  --nav-hover-color: #f38181;
+  --article-title-color: #333333;
+  --article-text-color: #999999;
+  --team-text-color: #999999;
 }

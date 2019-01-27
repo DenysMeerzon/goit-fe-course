@@ -15,6 +15,7 @@ img {
 .site-header {
   display: flex;
   justify-content: space-between;
+  padding: 28px 0 112px 0;
 }
 .container {
   width: 1200px;
@@ -28,7 +29,7 @@ img {
   display: block;
   font-family: var(--Montserrat-font);
   font-size: 30px;
-  color: var(--header-font);
+  color: var(--header-color);
 }
 .site-nav {
   display: flex;
@@ -39,23 +40,43 @@ img {
   padding: 0;
   display: flex;
   min-width: 490px;
+  min-height: 34px;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .item-nav {
   list-style: none;
+  height: 23px;
 }
 .link-nav {
   text-decoration: none;
   font-size: 14px;
   font-family: var(--Montserrat-font);
   text-transform: uppercase;
-  color: var(--header-font);
+  color: var(--header-color);
 }
-.sect-title {
+.link-nav::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--nav-hover-color);
+  margin-top: 12px;
+  visibility: hidden;
+}
+.item-nav:hover .link-nav::after {
+  visibility: visible;
+}
+.link-nav:hover {
+  color: var(--nav-hover-color);
+}
+.sect-service {
+  margin-bottom: 86px;
+}
+.sect-title,
+.sect-title__team {
   font-size: 30px;
   font-family: var(--Montserrat-font);
   text-transform: uppercase;
-  color: var(--section-title-font);
+  color: var(--section-title-color);
   margin: 0 0 66px 0;
   text-align: center;
 }
@@ -67,10 +88,11 @@ img {
   text-transform: none;
   margin-bottom: 20px;
 }
-.sect-title::after {
+.sect-title::after,
+.sect-title__team::after {
   content: "";
   display: block;
-  border-bottom: 3px solid var(--section-title-border-font);
+  border-bottom: 3px solid var(--section-title-border-color);
   width: 60px;
   margin: 42px auto 0 auto;
 }
@@ -78,6 +100,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: space-between;
   height: 242px;
   margin: 0;
   padding: 0;
@@ -89,7 +112,79 @@ img {
 }
 .serv-link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-
-
+.serv-icon {
+  width: 80px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.serv-title {
+  margin: 0;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--Montserrat-font);
+  color: var(--article-title-color);
+}
+.serv-text {
+  margin: 0;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  font-family: var(--Roboto-font);
+  color: var(--article-text-color);
+}
+.icon-alarm {
+  background-image: url(../img/icons/alarm.png);
+}
+.icon-lineGraph {
+  background-image: url(../img/icons/lineGraph.png);
+}
+.icon-computer {
+  background-image: url(../img/icons/computer.png);
+}
+.icon-book {
+  background-image: url(../img/icons/book.png);
+}
+.icon-home {
+  background-image: url(../img/icons/home.png);
+}
+.icon-image {
+  background-image: url(../img/icons/image.png);
+}
+.sect-title__team::before {
+  content: "Who we are";
+  display: block;
+  font-size: 24px;
+  font-family: var(--Kaushan-font);
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.sect-text__team {
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--Roboto-font);
+  color: var(--team-text-color);
+  width: 980px;
+  padding: 0;
+  margin: 0 auto 90px auto;
+}
+.team-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  height: 470px;
+  width: 380px;
+  list-style: none;
+}
+.team-link {
+  text-decoration: none;
+}
