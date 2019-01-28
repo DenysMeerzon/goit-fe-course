@@ -54,6 +54,7 @@ img {
   font-family: var(--Montserrat-font);
   text-transform: uppercase;
   color: var(--header-color);
+  transition: color 200ms linear;
 }
 .link-nav::after {
   content: "";
@@ -61,6 +62,7 @@ img {
   border-bottom: 3px solid var(--nav-hover-color);
   margin-top: 12px;
   visibility: hidden;
+  transition: color 200ms linear;
 }
 .item-nav:hover .link-nav::after {
   visibility: visible;
@@ -184,7 +186,21 @@ img {
   height: 470px;
   width: 380px;
   list-style: none;
+  background-color: var(--img-bg-color);
 }
 .team-link {
   text-decoration: none;
+}
+.team-figure {
+  margin: 0;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.figure-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--Montserrat-font);
+  color: var(--figure-text-color);
 }
