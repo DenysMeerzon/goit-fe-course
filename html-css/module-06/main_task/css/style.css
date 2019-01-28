@@ -49,6 +49,7 @@ img {
   height: 23px;
 }
 .link-nav {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   font-family: var(--Montserrat-font);
@@ -67,14 +68,24 @@ img {
 .item-nav:hover .link-nav::after {
   visibility: visible;
 }
-.link-nav:hover {
+.link-nav:hover,
+.link-nav:focus {
   color: var(--nav-hover-color);
 }
 .sect-service {
-  margin-bottom: 86px;
+  padding-bottom: 86px;
 }
-.sect-title,
-.sect-title__team {
+.sect-title__first {
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--Kaushan-font);
+  text-transform: none;
+  margin: 0 0 21px 0;
+}
+.sect-title__first::first-letter {
+  text-transform: uppercase;
+}
+.sect-title__second {
   font-size: 30px;
   font-family: var(--Montserrat-font);
   text-transform: uppercase;
@@ -82,16 +93,7 @@ img {
   margin: 0 0 66px 0;
   text-align: center;
 }
-.sect-title::before {
-  content: "We work with";
-  display: block;
-  font-size: 24px;
-  font-family: var(--Kaushan-font);
-  text-transform: none;
-  margin-bottom: 20px;
-}
-.sect-title::after,
-.sect-title__team::after {
+.sect-title__second::after {
   content: "";
   display: block;
   border-bottom: 3px solid var(--section-title-border-color);
@@ -102,8 +104,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between;
-  height: 242px;
   margin: 0;
   padding: 0;
 }
@@ -111,18 +111,18 @@ img {
   list-style: none;
   width: 380px;
   height: 70px;
-}
-.serv-link {
-  text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-.serv-icon {
+.serv-item:nth-child(-n + 3) {
+  margin-bottom: 98px;
+}
+.serv-item::before {
+  content: "";
+  display: block;
   width: 80px;
   height: 35px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .serv-title {
   margin: 0;
@@ -143,29 +143,33 @@ img {
 }
 .icon-alarm {
   background-image: url(../img/icons/alarm.png);
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .icon-lineGraph {
   background-image: url(../img/icons/lineGraph.png);
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .icon-computer {
   background-image: url(../img/icons/computer.png);
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .icon-book {
   background-image: url(../img/icons/book.png);
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .icon-home {
   background-image: url(../img/icons/home.png);
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .icon-image {
   background-image: url(../img/icons/image.png);
-}
-.sect-title__team::before {
-  content: "Who we are";
-  display: block;
-  font-size: 24px;
-  font-family: var(--Kaushan-font);
-  text-transform: none;
-  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .sect-text__team {
   text-align: center;
