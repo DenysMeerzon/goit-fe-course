@@ -114,6 +114,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: 25px 1px;
 }
 .serv-item:nth-child(-n + 3) {
   margin-bottom: 98px;
@@ -143,33 +145,21 @@ img {
 }
 .icon-alarm {
   background-image: url(../img/icons/alarm.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .icon-lineGraph {
   background-image: url(../img/icons/lineGraph.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .icon-computer {
   background-image: url(../img/icons/computer.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .icon-book {
   background-image: url(../img/icons/book.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .icon-home {
   background-image: url(../img/icons/home.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .icon-image {
   background-image: url(../img/icons/image.png);
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
 }
 .sect-text__team {
   text-align: center;
