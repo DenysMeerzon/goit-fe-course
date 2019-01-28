@@ -1,7 +1,7 @@
 :root {
-  --Roboto-font: "Roboto", sans-serif;
-  --Montserrat-font: "Montserrat", sans-serif;
-  --Kaushan-font: "Kaushan Script", cursive;
+  --Roboto-font: "Roboto", sans-serif, serif;
+  --Montserrat-font: "Montserrat", sans-serif, serif;
+  --Kaushan-font: "Kaushan Script", cursive, serif;
   --header-color: #95e1d3;
   --section-title-color: #333333;
   --section-title-border-color: #f38181;
@@ -11,4 +11,5 @@
   --team-text-color: #999999;
   --img-bg-color: #95e1d3;
   --figure-text-color: #333333;
+  --border-bottom-section: #e5e5e5;
 }

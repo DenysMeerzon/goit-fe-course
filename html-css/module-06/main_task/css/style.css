@@ -161,6 +161,10 @@ img {
 .icon-image {
   background-image: url(../img/icons/image.png);
 }
+.sect-team {
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--border-bottom-section);
+}
 .sect-text__team {
   text-align: center;
   font-size: 15px;
@@ -177,24 +181,41 @@ img {
   justify-content: space-between;
 }
 .team-item {
-  height: 470px;
-  width: 380px;
   list-style: none;
-  background-color: var(--img-bg-color);
 }
 .team-link {
   text-decoration: none;
+  display: block;
 }
 .team-figure {
   margin: 0;
 }
 .team-img {
   margin-bottom: 30px;
+  background-color: var(--img-bg-color);
 }
-.figure-title {
+.figure-title__first {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
   font-family: var(--Montserrat-font);
   color: var(--figure-text-color);
+  margin-bottom: 12px;
+}
+.figure-title__second {
+  font-size: 15px;
+  font-family: var(--Roboto-font);
+  color: var(--team-text-color);
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+.Shape_4 {
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 360px;
+  top: 1604px;
+  width: 1200px;
+  height: 1px;
+  z-index: 9;
 }
