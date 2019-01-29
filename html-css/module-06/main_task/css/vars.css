@@ -12,4 +12,10 @@
   --img-bg-color: #95e1d3;
   --figure-text-color: #333333;
   --border-bottom-section: #e5e5e5;
+  --footer-link-color: #333333;
+  --footer-link-after-color: #f38181;
+  --footer-submit-color: #95e1d3;
+  --footer-input-border-color: #e5e5e5;
+  --footer-submit-text-color: #ffffff;
+  --footer-input-placeholder-color: #cccccc;
 }
