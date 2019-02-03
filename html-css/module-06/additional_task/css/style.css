@@ -1,0 +1,70 @@
+/* task#1 */
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  margin-bottom: 15px;
+}
+.list-title,
+.social-card {
+  text-align: center;
+}
+.list {
+  display: flex;
+  width: 930px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+}
+.list-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* task#2 */
+.site-article {
+  width: 250px;
+  margin: 0 auto;
+  border: 3px solid grey;
+}
+.site-article:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+.article-img {
+  margin: 8px;
+}
+.article-img:hover {
+  transform: rotate(5deg);
+  transition-duration: 200ms;
+}
+.article-title {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 21px;
+  color: black;
+  transition: font-size, color;
+}
+.article-title:hover {
+  color: red;
+  font-size: 24px;
+  transition: font-size 200ms linear;
+  transition: color 300ms linear;
+}
+.article-text {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.article-button {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 120px;
+  height: 25px;
+  background-color: white;
+  transition: width, background-color;
+}
+.article-button:hover {
+  width: 240px;
+  background-color: yellow;
+  transition: width, background-color 200ms linear;
+}
