@@ -33,23 +33,21 @@ img {
 }
 .article-img {
   margin: 8px;
+  transition: transform 200ms linear;
 }
 .article-img:hover {
   transform: rotate(5deg);
-  transition-duration: 200ms;
 }
 .article-title {
   margin: 0 0 10px 0;
   text-align: center;
   font-size: 21px;
   color: black;
-  transition: font-size, color;
+  transition: transform 200ms linear, color 300ms linear;
 }
 .article-title:hover {
   color: red;
-  font-size: 24px;
-  transition: font-size 200ms linear;
-  transition: color 300ms linear;
+  transform: scale(1.15);
 }
 .article-text {
   margin: 0 0 10px 0;
@@ -61,10 +59,9 @@ img {
   width: 120px;
   height: 25px;
   background-color: white;
-  transition: width, background-color;
+  transition: width 200ms linear, background-color 200ms linear;
 }
 .article-button:hover {
   width: 240px;
   background-color: yellow;
-  transition: width, background-color 200ms linear;
 }
