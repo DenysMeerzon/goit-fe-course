@@ -133,22 +133,22 @@ img {
   font-family: var(--Roboto-font);
   color: var(--article-text-color);
 }
-.serv-item:nth-child(1) {
+.alarm-item {
   background-image: url(../img/icons/alarm.png);
 }
-.serv-item:nth-child(2) {
+.lineGraph-item {
   background-image: url(../img/icons/lineGraph.png);
 }
-.serv-item:nth-child(3) {
+.computer-item {
   background-image: url(../img/icons/computer.png);
 }
-.serv-item:nth-child(4) {
+.book-item {
   background-image: url(../img/icons/book.png);
 }
-.serv-item:nth-child(5) {
+.home-item {
   background-image: url(../img/icons/home.png);
 }
-.serv-item:nth-child(6) {
+.image-item {
   background-image: url(../img/icons/image.png);
 }
 .sect-team {
@@ -185,29 +185,21 @@ img {
 }
 .team-img:hover .second-img {
   visibility: visible;
-  transition: bottom, right 200ms linear;
-  bottom: 10px;
-  right: 10px;
+  transform: translate(-10px, -10px);
 }
 .team-img:hover .first-img {
-  transition: bottom, right 200ms linear;
-  bottom: 10px;
-  right: 10px;
+  transform: translate(-10px, -10px);
 }
 .first-img {
-  bottom: 0;
-  right: 0;
   position: absolute;
   min-width: 380px;
   min-height: 470px;
-  transition: bottom, right 200ms linear;
+  transition: transform 200ms linear;
 }
 .second-img {
   min-width: 380px;
   min-height: 470px;
   position: absolute;
-  bottom: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +220,7 @@ img {
   );
   z-index: 1;
   visibility: hidden;
-  transition: bottom, right 200ms linear;
+  transition: transform 200ms linear;
 }
 .team-img__list {
   padding: 0;
@@ -248,6 +240,7 @@ img {
   background-repeat: no-repeat;
   background-color: var(--img-icon-bg-color);
   background-position: center;
+  transition: background-color 200ms linear;
 }
 .team-img__link:hover {
   background-color: var(--img-hover-color);
@@ -306,25 +299,18 @@ input[type="radio"].visually-hidden {
 }
 .text-footer {
   margin: 0;
-  font-size: 0;
-}
-.link-footer {
-  display: block;
-  text-decoration: none;
   font-size: 14px;
   font-family: var(--Montserrat-font);
   color: var(--footer-link-color);
 }
-.link-footer::after {
-  content: "Laaqiq";
+.link-footer {
+  text-decoration: none;
   color: var(--footer-link-after-color);
 }
 .footer-form {
-  font-size: 0;
   display: flex;
 }
 .footer-input {
-  display: block;
   width: 228px;
   height: 40px;
   border: 1px solid var(--footer-input-border-color);
@@ -335,7 +321,6 @@ input[type="radio"].visually-hidden {
   font-family: var(--Roboto-font);
 }
 .footer-submit {
-  display: block;
   width: 150px;
   height: 40px;
   background-color: var(--footer-submit-color);
@@ -348,4 +333,3 @@ input[type="radio"].visually-hidden {
   padding: 0;
   cursor: pointer;
 }
-
