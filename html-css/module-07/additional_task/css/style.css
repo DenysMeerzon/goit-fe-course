@@ -1,0 +1,101 @@
+/* task#1 */
+.wrapper {
+  padding-bottom: 20px;
+}
+.site-table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.table-caption {
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.table-th__first,
+.table-th,
+.table-th__second,
+.table-th__third {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+.table-td__first {
+  text-transform: uppercase;
+}
+.table-td__first,
+.table-td,
+.table-td__second,
+.table-td__third {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.table-th__first,
+.table-td__first {
+  width: 200px;
+  height: 40px;
+  padding-left: 15px;
+}
+.table-td__second,
+.table-th__second {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+.table-td__third,
+.table-th__third {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+}
+.site-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-input {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 50px;
+}
+.site-textarea {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  width: 300px;
+}
+.site-button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  border: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: black;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: black;
+}
