@@ -1,0 +1,264 @@
+@import "./vars.css";
+@import "./fonts.css";
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+.site-header {
+  padding: 50px 0 126px 0;
+}
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.site-logo {
+  margin: 0;
+}
+.link-logo {
+  display: block;
+  font-size: 26px;
+  color: var(--logo-color);
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+}
+.list-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.item-nav:not(:last-child) {
+  margin-right: 40px;
+}
+.link-nav {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  color: var(--nav-color);
+  transition: color 200ms linear;
+}
+.link-nav:hover {
+  color: var(--nav-link-hover);
+}
+.sect-serv {
+  padding-bottom: 120px;
+}
+.serv-title {
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--serv-title-color);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.serv-text {
+  margin: 0;
+  font-size: 16px;
+  color: var(--serv-sub-title-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 76px;
+}
+.serv-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.serv-item:not(:last-child) {
+  margin-right: 35px;
+}
+.serv-item::before {
+  content: "";
+  display: block;
+  height: 74px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 22px;
+}
+.icon-basket::before {
+  background-image: url(../img/icons/Icon-Basket.png);
+}
+.icon-laptop::before {
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+.icon-locked::before {
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+.serv-item__title {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  color: var(--serv-title-color);
+}
+.serv-item__text {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  color: var(--serv-sub-title-color);
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+}
+.sect-contact {
+  background-color: var(--sect-contact-bg-color);
+  padding: 110px 0 114px 0;
+  background-image: url(../img/map-image.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.contact-title {
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--contact-title-color);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.contact-text {
+  margin: 0;
+  font-size: 16px;
+  color: var(--serv-sub-title-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 76px;
+}
+.sect-form {
+}
+.block-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 30px;
+  height: 226px;
+}
+.form-input {
+  width: 459px;
+  height: 58px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 2px;
+  padding-left: 21px;
+}
+.form-input__message {
+  width: 459px;
+  height: 210px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  padding: 21px 0 0 21px;
+}
+.input-valid:valid {
+  border-color: green;
+}
+.input-valid:invalid {
+  border-color: red;
+}
+.form-button {
+  display: block;
+  border-radius: 3px;
+  width: 240px;
+  height: 66px;
+  background-color: var(--button-bg-color);
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--button-text-color);
+  border: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  opacity: 1;
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--input-placeholder-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}

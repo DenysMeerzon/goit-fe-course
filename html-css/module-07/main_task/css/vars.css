@@ -1,0 +1,13 @@
+:root {
+  --logo-color: #fed136;
+  --nav-color: #222222;
+  --nav-link-hover: #fed136;
+  --serv-title-color: #222222;
+  --serv-sub-title-color: #777777;
+  --sect-contact-bg-color: #222222;
+  --contact-title-color: #ffffff;
+  --input-border-color: #cccccc;
+  --button-bg-color: #fed136;
+  --button-text-color: #ffffff;
+  --input-placeholder-color: #bbbbbb;
+}
