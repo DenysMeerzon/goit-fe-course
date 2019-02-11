@@ -45,10 +45,9 @@ a {
 .list-nav {
   margin: 0;
   padding: 0;
+  min-width: 485px;
   display: flex;
-}
-.item-nav:not(:last-child) {
-  margin-right: 40px;
+  justify-content: space-between;
 }
 .link-nav {
   display: block;
@@ -92,9 +91,6 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
-}
-.serv-item:not(:last-child) {
-  margin-right: 35px;
 }
 .serv-item::before {
   content: "";
@@ -159,15 +155,15 @@ a {
   font-weight: 400;
   margin-bottom: 76px;
 }
-.sect-form {
-}
-.block-inputs {
+.container-form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 30px;
-  height: 226px;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .form-input {
   width: 459px;
@@ -177,7 +173,7 @@ a {
   padding-left: 21px;
 }
 .form-input__message {
-  width: 459px;
+  min-width: 459px;
   height: 210px;
   border: 1px solid var(--input-border-color);
   border-radius: 5px;
@@ -196,7 +192,6 @@ a {
   height: 66px;
   background-color: var(--button-bg-color);
   margin: 0 auto;
-  cursor: pointer;
   font-size: 18px;
   font-family: "Montserrat";
   font-style: normal;
@@ -204,6 +199,10 @@ a {
   text-transform: uppercase;
   color: var(--button-text-color);
   border: none;
+}
+.form-button:hover {
+  cursor: pointer;
+  background-color: var(--button-bg-hover-color);
 }
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
