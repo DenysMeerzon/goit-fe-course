@@ -199,6 +199,7 @@ a {
   text-transform: uppercase;
   color: var(--button-text-color);
   border: none;
+  transition: background-color 200ms linear;
 }
 .form-button:hover {
   cursor: pointer;
