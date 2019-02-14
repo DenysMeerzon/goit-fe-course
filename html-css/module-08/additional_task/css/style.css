@@ -64,33 +64,57 @@
     width: 5em;
   }
 }
+/* task#3 */
 .wrapper-one {
-  width: 15em;
+  max-width: 15em;
   background-color: #8a7171;
   padding: 1em;
   height: 17em;
 }
 .block-first {
   background-color: red;
-  width: 14em;
+  width: 90%;
   height: 5em;
+  margin: 0 auto;
 }
 .block-second {
   background-color: green;
-  width: 14em;
+  width: 90%;
   height: 5em;
+  margin: 0 auto;
 }
 .block-third {
   background-color: lightblue;
-  width: 14em;
+  width: 90%;
   height: 5em;
+  margin: 0 auto;
 }
 @media screen and (min-width: 30em) {
   .block-first,
   .block-second {
-    margin-bottom: 1em;
+    margin: 0 auto 1em auto;
   }
   .block-third {
     height: 2.5em;
+  }
+}
+@media screen and (min-width: 48em) {
+  .block-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+  }
+  .block-second,
+  .block-third {
+    height: auto;
+    margin: 0;
+  }
+  .block-second {
+    width: 35%;
+  }
+  .block-third {
+    width: 60%
   }
 }
