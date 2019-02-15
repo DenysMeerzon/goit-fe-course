@@ -1,0 +1,49 @@
+.site-main {
+  padding: 7.2rem 0 5.6rem 0;
+}
+.main-section {
+  margin: 0 auto;
+  width: 90%;
+}
+.main-section__title {
+  font-size: 2.2rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-section-title-color);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+}
+.section-list {
+  margin-bottom: 2.8rem;
+}
+.section-item:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+.section-item__title {
+  font-size: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-section-title-color);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.section-item__text {
+  font-size: 1.4rem;
+  color: var(--main-section-text-color);
+  font-family: var(--Roboto-latin-font);
+  text-align: center;
+  margin: 0;
+}
+.main-section__button {
+  display: block;
+  font-size: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-button-color);
+  text-align: center;
+  border: 0.2rem solid var(--main-button-color);
+  border-radius: 2rem;
+  background-color: transparent;
+  min-width: 28rem;
+  min-height: 4rem;
+  line-height: 4rem;
+}
