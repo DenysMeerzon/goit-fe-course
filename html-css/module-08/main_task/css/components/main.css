@@ -19,6 +19,40 @@
 .section-item:not(:last-child) {
   margin-bottom: 2.8rem;
 }
+.section-figure {
+  margin: 0;
+}
+.figure-img__block {
+  position: relative;
+  margin: 0 auto 2.2rem auto;
+  height: 12rem;
+  width: 12rem;
+}
+.figure-block__img {
+
+}
+.figure-img__block::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  left: 9rem;
+  top: 8.8rem;
+}
+.picture-item__first::after {
+  background-image: url(../../img/icons/icon-TV.png);
+}
+.picture-item__second::after {
+  background-image: url(../../img/icons/icon-bottle.png);
+}
+.picture-item__third::after {
+  background-image: url(../../img/icons/icon-coffee.png);
+}
+.picture-item__fourth::after {
+  background-image: url(../../img/icons/icon-telegram.png);
+}
 .section-item__title {
   font-size: 1.4rem;
   font-family: var(--Montserrat-latin-font);
@@ -43,7 +77,8 @@
   border: 0.2rem solid var(--main-button-color);
   border-radius: 2rem;
   background-color: transparent;
-  min-width: 28rem;
-  min-height: 4rem;
+  max-width: 28rem;
+  max-height: 4rem;
   line-height: 4rem;
+  margin: 0 auto;
 }

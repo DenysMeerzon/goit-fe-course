@@ -71,8 +71,8 @@
 }
 .header-section__button {
   display: block;
-  min-width: 28rem;
-  min-height: 4rem;
+  max-width: 28rem;
+  max-height: 4rem;
   background-color: var(--header-button-bg-color);
   border-radius: 2rem;
   text-align: center;
@@ -80,6 +80,7 @@
   font-family: var(--Montserrat-latin-font);
   color: var(--header-main-color);
   line-height: 4rem;
+  margin: 0 auto;
 }
 
 
