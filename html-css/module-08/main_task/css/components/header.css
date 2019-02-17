@@ -81,6 +81,48 @@
   color: var(--header-main-color);
   line-height: 4rem;
   margin: 0 auto;
+  transition: background-color 200ms linear;
 }
-
-
+@media screen and (min-width: 768px) {
+  .masthead-wrapper {
+    padding: 3.8rem 0 23.4rem 0;
+  }
+  .masthead {
+    padding-bottom: 15.2rem;
+  }
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-nav {
+    margin-bottom: 0;
+  }
+  .section-title {
+    font-size: 5.2rem;
+    margin-bottom: 3.8rem;
+  }
+  .section-text {
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .masthead {
+    width: 94.2rem;
+  }
+  .nav-button:hover {
+    cursor: pointer;
+  }
+  .header-section {
+    width: 94.2rem;
+  }
+  .section-title {
+    width: 51rem;
+    margin: 0 auto 3.8rem auto;
+  }
+  .header-section__button:hover {
+    background-color: var(--header-main-color);
+    color: var(--header-button-bg-color);
+  }
+}
