@@ -23,6 +23,9 @@
 .section-item:not(:last-child) {
   margin-bottom: 2.8rem;
 }
+.item-link {
+  display: block;
+}
 .section-figure {
   margin: 0;
 }
