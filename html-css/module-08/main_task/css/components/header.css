@@ -40,13 +40,12 @@
   font-family: var(--Montserrat-latin-font);
   color: var(--header-main-color);
   background-color: transparent;
-  border: none;
   text-align: center;
   padding: 1rem 1.6rem;
-}
-.nav-button__border {
-  border: 0.2rem solid var(--header-main-color);
+  display: block;
+  border: 0.2rem solid transparent;
   border-radius: 2rem;
+  transition: border-color 200ms linear;
 }
 .header-section {
   width: 90%;
@@ -107,12 +106,13 @@
     margin-bottom: 3.6rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .masthead {
     width: 94.2rem;
   }
   .nav-button:hover {
     cursor: pointer;
+    border: 0.2rem solid var(--header-main-color);
   }
   .header-section {
     width: 94.2rem;

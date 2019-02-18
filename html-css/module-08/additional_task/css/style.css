@@ -1,4 +1,7 @@
 /* task#1 */
+html {
+  font-size: 62.5%;
+}
 .container {
   min-width: 960px;
   display: flex;
@@ -115,6 +118,6 @@
     width: 35%;
   }
   .block-third {
-    width: 60%
+    width: 60%;
   }
 }

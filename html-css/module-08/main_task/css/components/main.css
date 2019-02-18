@@ -16,6 +16,10 @@
 .section-list {
   margin-bottom: 2.8rem;
 }
+.section-item {
+  width: 22rem;
+  margin: 0 auto;
+}
 .section-item:not(:last-child) {
   margin-bottom: 2.8rem;
 }
@@ -27,6 +31,9 @@
   margin: 0 auto 2.2rem auto;
   height: 12rem;
   width: 12rem;
+}
+.figure-block__img {
+  border-radius: 50%;
 }
 .figure-img__block::after {
   content: "";
