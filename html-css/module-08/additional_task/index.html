@@ -62,8 +62,14 @@
     </div>
     <!-- task#4 -->
     <picture class="site-picture">
-      <source media="(min-width: 480px)" srcset="./img/bird.jpg" />
-      <source media="(min-width: 768px)" srcset="./img/palm.jpeg" />
+      <source
+        media="(min-width: 480px) and (max-width: 767px)"
+        srcset="./img/bird.jpg"
+      />
+      <source
+        media="(min-width: 768px) and (max-width:1339px)"
+        srcset="./img/palm.jpeg"
+      />
       <source media="(min-width: 1440px)" srcset="./img/yacht.jpeg" />
       <img src="./img/beach.jpeg" alt="the beach" />
     </picture>
