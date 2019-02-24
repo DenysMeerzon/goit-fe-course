@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  min-width: 20rem;
+  max-width: 50rem;
+  text-align: center;
+}
+.content {
+  background-color: yellow;
+}
+.sidebar {
+  background-color: green;
+}
