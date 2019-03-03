@@ -1,0 +1,9 @@
+.masthead-wrapper {
+  background: linear-gradient(
+      to right,
+      rgba(26, 25, 21, 0.35) 0%,
+      rgba(26, 25, 21, 0.35) 100%
+    ),
+    url(../../img/header-backgroundImg.png) center/cover no-repeat;
+  padding: 2rem 0 13.8rem 0;
+}
