@@ -7,3 +7,105 @@
     url(../../img/header-backgroundImg.png) center/cover no-repeat;
   padding: 2rem 0 13.8rem 0;
 }
+
+.site-header {
+  flex-direction: column-reverse;
+  padding-bottom: 3.4rem;
+}
+.site-logo {
+  text-align: center;
+  margin: 0;
+}
+.logo-link {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--header-main-color);
+}
+.logo-link:hover {
+  color: var(--header-main-color);
+}
+.site-list {
+  display: flex;
+  justify-content: center;
+}
+.item-link {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--header-main-color);
+  padding: 1rem 1.6rem;
+  border: 0.2rem solid transparent;
+  border-radius: 2rem;
+  transition: border-color 200ms linear;
+}
+.item-link:hover {
+  border-color: var(--header-main-color);
+  color: var(--header-main-color);
+}
+.site-hero {
+  text-align: center;
+}
+.hero-title {
+  margin: 0 auto;
+  font-size: 3rem;
+  max-width: 30rem;
+  text-transform: uppercase;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--header-main-color);
+  margin-bottom: 2rem;
+}
+.hero-text {
+  font-size: 1.8rem;
+  font-family: var(--Roboto-latin-font);
+  color: var(--header-main-color);
+  margin-bottom: 1.8rem;
+}
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--header-main-color);
+  padding: 1.2rem 4.8rem;
+  background-color: var(--header-button-bg-color);
+  border-radius: 2rem;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+.hero-button:hover {
+  color: var(--header-button-bg-color);
+  background-color: var(--header-main-color);
+}
+@media screen and (width <= 48em) {
+  .site-nav {
+    margin-bottom: 11.6rem;
+  }
+  .hero-title {
+  }
+}
+@media screen and (width > 48em) {
+  .masthead-wrapper {
+    padding: 3.8rem 0 23.4rem 0;
+  }
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 14.8rem;
+  }
+  .hero-title {
+    font-size: 5.2rem;
+    max-width: 51rem;
+    margin-bottom: 3.8rem;
+  }
+  .hero-text {
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+  }
+  .hero-button {
+    padding: 1.2rem 2.4rem;
+  }
+}

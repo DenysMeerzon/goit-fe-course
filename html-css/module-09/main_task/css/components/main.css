@@ -1,0 +1,108 @@
+.site-main {
+  padding: 7.2rem 0 5.6rem 0;
+}
+.site-section {
+}
+.section-title {
+  font-size: 2.2rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-section-title-color);
+  margin: 0 auto;
+  text-align: center;
+}
+.section-list {
+  margin: 0 auto;
+}
+.section-link {
+  display: block;
+}
+.section-figure {
+  /* width: 22rem; */
+  margin: 0 auto;
+}
+.figure-block {
+  margin: 0 auto 2.2rem auto;
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+}
+.figure-block::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 8.2rem;
+  top: 8.5rem;
+}
+.figure-first__icon::after {
+  background-image: url(../../img/icons/icon-TV.png);
+}
+.figure-second__icon::after {
+  background-image: url(../../img/icons/icon-bottle.png);
+}
+.figure-third__icon::after {
+  background-image: url(../../img/icons/icon-coffee.png);
+}
+.figure-fourth__icon::after {
+  background-image: url(../../img/icons/icon-telegram.png);
+}
+.figure-image {
+  border-radius: 50%;
+}
+.figure-figcaption {
+  text-align: center;
+  max-width: 22rem;
+}
+.figcaption-title {
+  font-size: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-section-title-color);
+  margin-bottom: 1.8rem;
+}
+.figcaption-text {
+  font-size: 1.4rem;
+  font-family: var(--Roboto-latin-font);
+  color: var(--main-section-text-color);
+  margin: 0;
+}
+.section-button {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-family: var(--Montserrat-latin-font);
+  color: var(--main-button-color);
+  text-align: center;
+  padding: 1.2rem 7.2rem;
+  border: 0.2rem solid var(--main-button-color);
+  border-radius: 2rem;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+.section-button:hover {
+  background-color: var(--main-button-color);
+  color: var(--main-button-hover-color);
+}
+@media screen and (width <= 48em) {
+  .section-title {
+    width: 28rem;
+    margin-bottom: 1.8rem;
+  }
+  .section-list {
+    margin-bottom: 2.8rem;
+  }
+  .section-item:not(:last-child) {
+    margin-bottom: 2.8rem;
+  }
+}
+@media screen and (width > 48em) {
+  .site-main {
+    padding: 7.5rem 0 4rem 0;
+  }
+  .section-title {
+    margin-bottom: 3.6rem;
+  }
+  .section-list {
+   
+  }
+}
