@@ -51,13 +51,13 @@
 .hero-title {
   margin: 0 auto;
   font-size: 3rem;
-  max-width: 30rem;
   text-transform: uppercase;
   font-family: var(--Montserrat-latin-font);
   color: var(--header-main-color);
   margin-bottom: 2rem;
 }
 .hero-text {
+  margin: 0 auto;
   font-size: 1.8rem;
   font-family: var(--Roboto-latin-font);
   color: var(--header-main-color);
@@ -66,6 +66,7 @@
 .hero-button {
   display: block;
   margin: 0 auto;
+  /* max-width: 29rem; */
   font-size: 1.4rem;
   line-height: 1.4rem;
   font-family: var(--Montserrat-latin-font);
@@ -84,6 +85,10 @@
     margin-bottom: 11.6rem;
   }
   .hero-title {
+    /* max-width: 33rem; */
+  }
+  .hero-text {
+    /* max-width: 26rem; */
   }
 }
 @media screen and (width > 48em) {
@@ -98,7 +103,7 @@
   }
   .hero-title {
     font-size: 5.2rem;
-    max-width: 51rem;
+    /* max-width: 51rem; */
     margin-bottom: 3.8rem;
   }
   .hero-text {
