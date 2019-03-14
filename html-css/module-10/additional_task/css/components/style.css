@@ -1,0 +1,12 @@
+.image {
+  width: 400px;
+  height: 200px;
+  background-image: url(/img/placeimg_400_200_nature.jpg);
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image {
+    width: 800px;
+    height: 400px;
+    background-image: url(/img/placeimg_800_400_nature@2x.jpg);
+  }
+}

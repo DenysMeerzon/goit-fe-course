@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/libs/normalize.css" />
+    <link rel="stylesheet" href="./css/components/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- task#1 -->
+    <picture>
+      <source
+        srcset="
+          ./img/placeimg_400_200_nature.jpg    400w,
+          ./img/placeimg_800_400_nature@2x.jpg 800w
+        "
+      />
+      <img srcset="./img/placeimg_200_100_nature.jpg" alt="default image" />
+    </picture>
+    <!-- task#2 -->
+    <div class="image"></div>
+    <!-- task#3 -->
+    <header class="site-header">
+      <h1 class="site-title"><a class="title__logo" href="#">logo</a></h1>
+      <nav class="site-navigation">
+        <a class="navigation__link" href="#">link 1</a>
+        <a class="navigation__link" href="#">link 2</a>
+        <a class="navigation__link" href="#">link 3</a>
+        <a class="navigation__link" href="#">link 4</a>
+      </nav>
+    </header>
+  </body>
+</html>
