@@ -1,0 +1,27 @@
+:root {
+  --MontserratRegular: "MontserratRegular", serif, sans-serif;
+  --MontserratBold: "MontserratBold", serif, sans-serif;
+  --KaushanScript: "Kaushan Script", serif, sans-serif;
+  --RobotoItalic: "RobotoItalic", serif, sans-serif;
+  --RobotoRegular: "RobotoRegular", serif, sans-serif;
+  --header-main-color: #ffffff;
+  --header-hover-color: #fce38a;
+  --header-button-hover-color: #f38181;
+  --main-title-color: #333333;
+  --main-text-color: #999999;
+  --main-icon-color: #95e1d3;
+  --main-border-color: #e5e5e5;
+  --title-border-color: #f38181;
+  --team-img-background-color: #95e1d3;
+  --icons-border-color: #f38181;
+  --team-icons-color: #f38181;
+  --team-icons-hover-color: #ffffff;
+  --team-icons-background-color: #fce38a;
+  --team-icons-bg-hover-color: #f38181;
+  --footer-text-color: #333333;
+  --footer-link-color: #f38181;
+  --footer-input-border-color: #e5e5e5;
+  --footer-placeholder-text-color: #cccccc;
+  --footer-button-name-color: #ffffff;
+  --footer-button-bg-color: #95e1d3;
+}
