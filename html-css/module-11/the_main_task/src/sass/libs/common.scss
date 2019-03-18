@@ -2,29 +2,36 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .item {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
   display: block;
 }
+
 .title {
   margin: 0;
 }
+
 .text {
   margin: 0;
 }
+
 .list {
   margin: 0;
   padding: 0;

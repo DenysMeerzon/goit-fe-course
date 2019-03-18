@@ -1,9 +1,11 @@
 .site-main {
   padding-top: 5.4rem;
 }
+
 .services {
   padding-bottom: 10rem;
 }
+
 .services__sub-title,
 .team__sub-title {
   @include text("align");
@@ -12,6 +14,7 @@
   font-family: $KaushanScript;
   margin-bottom: 2.2rem;
 }
+
 .services__title,
 .team__title {
   @include text("all");
@@ -19,6 +22,7 @@
   font-family: $MontserratBold;
   color: $main-title-color;
   margin-bottom: 6.6rem;
+
   &::after {
     @include pseudo($display: block);
     border-bottom: 0.3rem solid $title-border-color;
@@ -31,10 +35,12 @@
   @include wrap-flex;
   justify-content: space-around;
 }
+
 .services-item {
   @include wrap-flex;
   justify-content: flex-end;
   width: 38rem;
+
   &:nth-child(-n + 3) {
     margin-bottom: 10.2rem;
   }
@@ -46,6 +52,7 @@
   margin: 0 auto;
   fill: $main-icon-color;
 }
+
 .item__title {
   @include text("trans");
   font-size: $main-font-size;
@@ -54,6 +61,7 @@
   margin-bottom: 2.2rem;
   width: 30rem;
 }
+
 .item__text {
   font-size: $secondary-font-size;
   font-family: $RobotoRegular;

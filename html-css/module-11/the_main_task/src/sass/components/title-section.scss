@@ -5,6 +5,7 @@
   color: $header-main-color;
   margin-bottom: 6rem;
 }
+
 .section__title {
   @include text ('all');
   font-size: 15rem;
@@ -13,6 +14,7 @@
   max-width: 90rem;
   margin: 0 auto 12.4rem auto;
 }
+
 .section__button {
   @include text ('all');
   font-size: $main-font-size;
@@ -24,6 +26,7 @@
   margin: 0 auto;
   line-height: 3.4rem;
   transition: background-color 200ms linear;
+  
   &:hover,
   &:focus {
     background-color: $header-button-hover-color;
