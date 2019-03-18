@@ -1,0 +1,108 @@
+.team {
+  padding-bottom: 8.6rem;
+  border-bottom: 0.1rem solid $main-border-color;
+}
+.team__text {
+  @include text("align");
+  font-size: $secondary-font-size;
+  font-family: $RobotoRegular;
+  color: $main-text-color;
+  max-width: 98rem;
+  margin: 0 auto 9.4rem auto;
+}
+.team-list {
+  @include between-flex;
+}
+.team-figure {
+  margin: 0;
+}
+.team-img {
+  position: relative;
+  background-color: $team-img-background-color;
+  min-width: 38rem;
+  min-height: 47rem;
+  margin-bottom: 3rem;
+  &:hover .img__item {
+    transform: translate(-1rem, -1rem);
+  }
+  &:hover .team-icons {
+    visibility: visible;
+    transform: translate(-1rem, -1rem);
+  }
+}
+
+.img__item {
+  position: absolute;
+  transition: transform 200ms linear;
+}
+.team-icons {
+  @include center-flex("all");
+  min-width: 38rem;
+  min-height: 47rem;
+  position: absolute;
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  transition: transform 200ms linear;
+  visibility: hidden;
+}
+.icons-list {
+  display: flex;
+}
+.icons-list svg {
+  display: block;
+  fill: $team-icons-color;
+  margin: auto;
+  transition: fill 200ms linear;
+}
+.icons__item {
+  &:hover .icons__link-team {
+    fill: $team-icons-hover-color;
+  }
+  &:not(:last-child) {
+    border-right: 0.1rem solid $icons-border-color;
+  }
+}
+
+.icons__link {
+  display: flex;
+  background-color: $team-icons-background-color;
+  width: 5.6rem;
+  height: 5.6rem;
+  transition: background-color 200ms linear;
+  &:hover {
+    background-color: $team-icons-bg-hover-color;
+  }
+}
+
+.icon--facebook {
+  width: 1.6rem;
+  height: 3.2rem;
+}
+.icon--twitter {
+  width: 3.8rem;
+  height: 3.2rem;
+}
+.icon--pinterest {
+  width: 2.6rem;
+  height: 3.2rem;
+}
+.icon--instagram {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.figcaption__title {
+  @include text("all");
+  font-size: $main-font-size;
+  color: $main-title-color;
+  font-family: $MontserratRegular;
+  margin-bottom: 1.8rem;
+}
+.figcaption__sub-title {
+  @include text("align");
+  font-size: $secondary-font-size;
+  font-family: $RobotoItalic;
+  color: $main-text-color;
+}

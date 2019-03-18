@@ -1,0 +1,31 @@
+.section__sub-title {
+  @include text("align");
+  font-size: 7.2rem;
+  font-family: $KaushanScript;
+  color: $header-main-color;
+  margin-bottom: 6rem;
+}
+.section__title {
+  @include text ('all');
+  font-size: 15rem;
+  font-family: $MontserratBold;
+  color: $header-main-color;
+  max-width: 90rem;
+  margin: 0 auto 12.4rem auto;
+}
+.section__button {
+  @include text ('all');
+  font-size: $main-font-size;
+  font-family: $MontserratBold;
+  color: $header-main-color;
+  border: 0.3rem solid $header-main-color;
+  width: 15.8rem;
+  height: 3.8rem;
+  margin: 0 auto;
+  line-height: 3.4rem;
+  transition: background-color 200ms linear;
+  &:hover,
+  &:focus {
+    background-color: $header-button-hover-color;
+  }
+}
