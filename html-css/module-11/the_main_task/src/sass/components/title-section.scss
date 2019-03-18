@@ -1,5 +1,6 @@
 .section__sub-title {
   @include text("align");
+  @extend %title;
   font-size: 7.2rem;
   font-family: $KaushanScript;
   color: $header-main-color;
@@ -8,6 +9,7 @@
 
 .section__title {
   @include text ('all');
+  @extend %title;
   font-size: 15rem;
   font-family: $MontserratBold;
   color: $header-main-color;
@@ -17,6 +19,7 @@
 
 .section__button {
   @include text ('all');
+  @extend %link;
   font-size: $main-font-size;
   font-family: $MontserratBold;
   color: $header-main-color;
@@ -26,7 +29,7 @@
   margin: 0 auto;
   line-height: 3.4rem;
   transition: background-color 200ms linear;
-  
+
   &:hover,
   &:focus {
     background-color: $header-button-hover-color;

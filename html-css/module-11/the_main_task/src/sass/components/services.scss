@@ -9,6 +9,7 @@
 .services__sub-title,
 .team__sub-title {
   @include text("align");
+  @extend %title;
   font-size: 2.4rem;
   color: $main-title-color;
   font-family: $KaushanScript;
@@ -18,6 +19,7 @@
 .services__title,
 .team__title {
   @include text("all");
+  @extend %title;
   font-size: 3rem;
   font-family: $MontserratBold;
   color: $main-title-color;
@@ -33,11 +35,13 @@
 
 .services-list {
   @include wrap-flex;
+  @extend %list;
   justify-content: space-around;
 }
 
 .services-item {
   @include wrap-flex;
+  @extend %item;
   justify-content: flex-end;
   width: 38rem;
 
@@ -55,6 +59,7 @@
 
 .item__title {
   @include text("trans");
+  @extend %title;
   font-size: $main-font-size;
   font-family: $MontserratRegular;
   color: $main-title-color;
@@ -63,6 +68,7 @@
 }
 
 .item__text {
+  @extend %text;
   font-size: $secondary-font-size;
   font-family: $RobotoRegular;
   color: $main-text-color;

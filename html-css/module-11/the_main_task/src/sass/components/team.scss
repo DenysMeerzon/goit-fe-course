@@ -5,6 +5,7 @@
 
 .team__text {
   @include text("align");
+  @extend %text;
   font-size: $secondary-font-size;
   font-family: $RobotoRegular;
   color: $main-text-color;
@@ -14,6 +15,11 @@
 
 .team-list {
   @include between-flex;
+  @extend %list;
+}
+
+.team-item {
+  @extend %item;
 }
 
 .team-figure {
@@ -58,6 +64,7 @@
 
 .icons-list {
   display: flex;
+  @extend %list;
 }
 
 .icons-list svg {
@@ -68,6 +75,8 @@
 }
 
 .icons__item {
+  @extend %item;
+
   &:hover .icons__link-team {
     fill: $team-icons-hover-color;
   }
@@ -78,6 +87,7 @@
 }
 
 .icons__link {
+  @extend %link;
   display: flex;
   background-color: $team-icons-background-color;
   width: 5.6rem;
@@ -109,8 +119,13 @@
   height: 3.2rem;
 }
 
+.figcaption__link {
+  @extend %link;
+}
+
 .figcaption__title {
   @include text("all");
+  @extend %title;
   font-size: $main-font-size;
   color: $main-title-color;
   font-family: $MontserratRegular;
@@ -119,6 +134,7 @@
 
 .figcaption__sub-title {
   @include text("align");
+  @extend %text;
   font-size: $secondary-font-size;
   font-family: $RobotoItalic;
   color: $main-text-color;

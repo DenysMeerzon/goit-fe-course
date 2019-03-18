@@ -14,7 +14,12 @@
   padding-bottom: 18.2rem;
 }
 
+.site-logo {
+  @extend %title;
+}
+
 .logo__link {
+  @extend %link;
   font-size: 3rem;
   color: $header-main-color;
   font-family: $MontserratBold;
@@ -26,6 +31,7 @@
 
 .navigation-list {
   @include between-flex;
+  @extend %list;
 }
 
 .navigation-list svg {
@@ -35,8 +41,13 @@
   fill: $header-main-color;
 }
 
+.list__item {
+  @extend %item;
+}
+
 .list__link {
   @include text("trans");
+  @extend %link;
   font-size: $main-font-size;
   color: $header-main-color;
   font-family: $MontserratRegular;
@@ -49,7 +60,7 @@
     visibility: hidden;
     transition: visibility 200ms linear;
   }
-  
+
   &:hover,
   &:focus {
     color: $header-hover-color;

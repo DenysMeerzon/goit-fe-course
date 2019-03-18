@@ -5,10 +5,11 @@
 }
 
 .footer__text {
+  @extend %text;
   font-size: $main-font-size;
   color: $footer-text-color;
   font-family: $MontserratRegular;
-  
+
   &-link {
     text-decoration: none;
     color: $footer-link-color;
