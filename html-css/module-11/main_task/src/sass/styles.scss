@@ -1,0 +1,17 @@
+/*
+   Import partials below
+*/
+@import "./fonts";
+@import "./vars";
+@import "./libs/placeholders";
+@import "./libs/mixins";
+@import "./normalize";
+@import "./libs/common";
+@import "./libs/utils";
+
+/* Components */
+@import "./components/site-header";
+@import "./components/title-section";
+@import "./components/services";
+@import "./components/team";
+@import "./components/footer";

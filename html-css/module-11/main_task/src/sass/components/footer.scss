@@ -1,0 +1,49 @@
+.footer-wrapper {
+  @include between-flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.footer__text {
+  @extend %text;
+  font-size: $main-font-size;
+  color: $footer-text-color;
+  font-family: $MontserratRegular;
+
+  &-link {
+    text-decoration: none;
+    color: $footer-link-color;
+  }
+}
+
+.footer-form {
+  display: flex;
+}
+
+.form__input {
+  width: 22.8rem;
+  height: 4rem;
+  border: 0.1rem solid $footer-input-border-color;
+  border-right: none;
+  font-size: $secondary-font-size;
+  padding-left: 1.2rem;
+}
+
+input::placeholder {
+  font-size: $secondary-font-size;
+  color: $footer-placeholder-text-color;
+  font-family: $RobotoItalic;
+}
+
+.form__button {
+  @include text("trans");
+  font-size: $main-font-size;
+  font-family: $MontserratBold;
+  color: $footer-button-name-color;
+  background-color: $footer-button-bg-color;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
