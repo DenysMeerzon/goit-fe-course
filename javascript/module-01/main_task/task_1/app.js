@@ -3,14 +3,13 @@ const ADMIN_PASSWORD = 'm4ng0h4ckz';
 const inPassword = prompt('Введите пароль');
 let message;
 if (inPassword === null) {
-  alert('Отменено пользователем!');
+  message = 'Отменено пользователем!';
 } else if (inPassword !== ADMIN_PASSWORD) {
   message = 'Доступ запрещен, неверный пароль!';
-  alert(message);
 } else {
   message = 'Добро пожаловать!';
-  alert(message);
 }
+alert(message);
 
 // Напиши скрипт имитирующий авторизацию администратора в панели управления.
 

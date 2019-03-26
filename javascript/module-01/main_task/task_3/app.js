@@ -1,23 +1,40 @@
 'use strict';
 const country = prompt('Введите название страны');
-switch (country) {
-  case 'Китай':
-    alert('Доставка в Китай будет стоить 100');
-    break;
-  case 'Южная Америка':
-    alert('Доставка в Южная Америка будет стоить 250');
-    break;
-  case 'Австралия':
-    alert('Доставка в Австралия будет стоить 170');
-    break;
-  case 'Индия':
-    alert('Доставка в Индия будет стоить 80');
-    break;
-  case 'Ямайка':
-    alert('Доставка в Ямайка будет стоить 120');
-    break;
-  default:
-    console.log('В вашей стране доставка не доступна');
+if (country === null || country === '') {
+  console.log('Вы не ввели название страны');
+} else {
+  const theOurCountry = country.toLowerCase().trim();
+  let theCountry;
+  let theCost;
+  switch (theOurCountry) {
+    case 'китай':
+      theCountry = 'Китай';
+      theCost = 100;
+      console.log(`Доставка в ${theCountry} будет стоить ${theCost}`);
+      break;
+    case 'южная америка':
+      theCountry = 'Южная Америка';
+      theCost = 250;
+      console.log(`Доставка в ${theCountry} будет стоить ${theCost}`);
+      break;
+    case 'австралия':
+      theCountry = 'Австралия';
+      theCost = 170;
+      console.log(`Доставка в ${theCountry} будет стоить ${theCost}`);
+      break;
+    case 'индия':
+      theCountry = 'Индия';
+      theCost = 80;
+      console.log(`Доставка в ${theCountry} будет стоить ${theCost}`);
+      break;
+    case 'ямайка':
+      theCountry = 'Ямайка';
+      theCost = 120;
+      console.log(`Доставка в ${theCountry} будет стоить ${theCost}`);
+      break;
+    default:
+      console.log('В вашей стране доставка не доступна');
+  }
 }
 
 // Пользователь может оформить доставку товара к себе в страну, указав ее в переменной country, но доставка есть не везде.
