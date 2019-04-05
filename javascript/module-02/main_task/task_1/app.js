@@ -2,6 +2,7 @@
 let input;
 const numbers = [];
 let total = 0;
+let message;
 
 do {
   input = prompt('Введите число');
@@ -19,4 +20,6 @@ if (numbers.length > 0) {
     total += numbers[i];
   }
   console.log(`Общая сумма чисел равна: ${total}`);
+} else {
+  message = alert('Вы ничего не ввели!');
 }
