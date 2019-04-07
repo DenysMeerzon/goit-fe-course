@@ -6,18 +6,15 @@ let message;
 
 do {
   input = prompt('Введите число');
-  input = Number(input);
-  const inputIsNaN = Number.isNaN(input);
-  if (inputIsNaN === false) {
-    numbers.push(input);
-  } else {
+  if (Number.isNaN(+input) === false && input !== null) {
+    numbers.push(+input);
+  } else if (Number.isNaN(+input) === true) {
     message = alert('Было введено не число, попробуйте еще раз');
   }
-} while (input !== 0);
-numbers.pop();
+} while (input !== null);
 if (numbers.length > 0) {
-  for (let i = 0; i < numbers.length; i += 1) {
-    total += numbers[i];
+  for (const number of numbers) {
+    total += number;
   }
   console.log(`Общая сумма чисел равна: ${total}`);
 } else {
