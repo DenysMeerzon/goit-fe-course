@@ -12,12 +12,9 @@ do {
     break;
   }
   attemptsLeft -= 1;
-  console.log(attemptsLeft);
   if (attemptsLeft) {
     alert(`Неверный пароль, у вас осталось ${attemptsLeft} попыток`);
   } else {
     alert('У вас закончились попытки, аккаунт заблокирован!');
   }
-  if (userPassword !== null) {
-  }
-} while (attemptsLeft !== 0);
+} while (attemptsLeft);
