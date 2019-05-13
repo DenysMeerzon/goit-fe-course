@@ -17,8 +17,6 @@ const notepad = {
     for (let i = 0; i < this.notes.length; i += 1) {
       if (this.notes[i].id === id) {
         return this.notes[i];
-      } else {
-        undefined;
       }
     }
     /*
@@ -41,7 +39,6 @@ const notepad = {
     for (let i = 0; i < this.notes.length; i += 1) {
       if (this.notes[i].id === id) {
         this.notes.splice(i, 1);
-        return;
       }
     }
     /*
@@ -52,12 +49,8 @@ const notepad = {
      */
   },
   updateNoteContent(id, updatedContent) {
-    const updateObj = {
-      ...this.findNoteById(id),
-      ...updatedContent,
-    };
-    this.deleteNote(id);
-    return this.notes.push(updateObj);
+    const updateObj = Object.assign(this.findNoteById(id), updatedContent);
+    return updateObj;
     /*
      * Обновляет контент заметки
      * updatedContent - объект с полями вида {имя: значение, имя: значение}
