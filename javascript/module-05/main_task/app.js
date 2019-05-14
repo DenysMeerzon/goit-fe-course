@@ -100,7 +100,10 @@ notepad.saveNote({
   priority: Notepad.Priority.LOW,
 });
 
-console.log('Все текущие заметки: ', notepad.getNotes());
+console.log(
+  'Все текущие заметки после добавления 2-х новых: ',
+  notepad.getNotes(),
+);
 
 /*
  * Зима уже близко, пора поднять приоритет на покупку одежды
