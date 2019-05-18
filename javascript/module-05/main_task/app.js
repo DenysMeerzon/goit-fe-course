@@ -11,9 +11,9 @@ Notepad.prototype.saveNote = function(note) {
   this.notes.push(note);
 };
 Notepad.prototype.findNoteById = function(id) {
-  for (let i = 0; i < this.notes.length; i += 1) {
-    if (this.notes[i].id === id) {
-      return this.notes[i];
+  for (const theObj of this.notes) {
+    if (theObj.id === id) {
+      return theObj;
     }
   }
 };
