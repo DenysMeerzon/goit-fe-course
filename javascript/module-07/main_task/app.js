@@ -86,11 +86,7 @@ const users = [
   },
 ];
 // Получить массив имен всех пользователей (поле name).
-const getAllNames = users =>
-  users.reduce((allNames, user) => {
-    allNames.push(user.name);
-    return allNames;
-  }, []);
+const getAllNames = users => users.map(user => user.name);
 
 console.log(getAllNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
@@ -103,12 +99,13 @@ console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, 
 
 // Получить массив имен пользователей по полю (поле gender).
 const getUsersByGender = (users, gender) =>
-  users.reduce((allNames = [], user) => {
-    if (gender === user.gender) {
-      allNames.push(user.name);
-    }
-    return allNames;
-  }, []);
+  users
+    .filter(user => {
+      if (user.gender === gender) {
+        return user;
+      }
+    })
+    .map(user => user.name);
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
@@ -141,12 +138,13 @@ console.log(getTotalBalance(users)); // 20916
 
 // Массив имен всех пользователей у которых есть друг с указанным именем.
 const getUsersByFriend = (users, name) =>
-  users.reduce((allNames = [], user) => {
-    if (user.friends.includes(name)) {
-      allNames.push(user.name);
-    }
-    return allNames;
-  }, []);
+  users
+    .filter(user => {
+      if (user.friends.includes(name)) {
+        return user;
+      }
+    })
+    .map(user => user.name);
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
