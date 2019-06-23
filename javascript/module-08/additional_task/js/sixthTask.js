@@ -25,7 +25,7 @@ const movieItem = [
 const newMovieItems = document.querySelector('body');
 
 function getMovieCard(movieItems) {
-  movieItems.map(item => createMovieCard(item));
+  return movieItems.map(item => createMovieCard(item));
 }
 
 function createMovieCard(newItem) {
@@ -60,6 +60,10 @@ function createMovieCard(newItem) {
 
   movie.append(theImg, movieBody);
 
-  newMovieItems.insertAdjacentElement('afterbegin', movie);
+  return movie;
+
+  // newMovieItems.insertAdjacentElement('afterbegin', movie);
 }
-getMovieCard(movieItem);
+const newMovieCard = getMovieCard(movieItem);
+
+newMovieItems.insertAdjacentHTML('afterbegin', newMovieCard);
