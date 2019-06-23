@@ -60,10 +60,7 @@ function createMovieCard(newItem) {
 
   movie.append(theImg, movieBody);
 
-  return movie;
-
-  // newMovieItems.insertAdjacentElement('afterbegin', movie);
+  newMovieItems.appendChild(movie);
 }
-const newMovieCard = getMovieCard(movieItem);
 
-newMovieItems.insertAdjacentHTML('afterbegin', newMovieCard);
+getMovieCard(movieItem);
