@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.main-title {
+  margin-left: 10px;
+}
+
+.listItem {
+  list-style: none;
+}
+.main-form {
+  border: 1px solid black;
+  width: 50%;
+}
+.form-section {
+  border: 1px solid black;
+  margin: 10px;
+}
+.section-title {
+  margin-left: 10px;
+}
+.section-list {
+  padding-left: 10px;
+}
+.form-button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}

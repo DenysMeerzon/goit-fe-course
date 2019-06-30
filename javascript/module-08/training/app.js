@@ -42,9 +42,11 @@
 
 // Добавление инлайн стилей, как правило, используется при создании галереи или сложных анимаций
 // button.style.backgroundColor = '#919191';
+
 // Свойство classList - позволяет добавлять/удалять/заменять класс селектора для динамического изменения css свойств
 // const homeMenuItem = document.querySelector('.menu-item');
 // homeMenuItem.classList.add('active');
+
 // Для создания кастомных атрибутов, необходимо использовать Data атрибуты
 // <button class="button js-magic-button">Magic! data-action = "magic!" </button>, где action - новый атрибут со значением "magic!"
 
@@ -89,6 +91,7 @@
 //   element.textContent = clickCount;
 // });
 
+// Сбор данных из формы с помощью form.elements
 // const form = document.querySelector('.js-register-form');
 
 // form.addEventListener('submit', handleSubmitWithFormData);
@@ -96,7 +99,7 @@
 // function handleSubmit(event) {
 //   event.preventDefault();
 //   const { elements } = event.currentTarget;
-//   console.dir(elements);
+//   // console.dir(elements);
 
 //   const nameInput = elements.name;
 //   const emailInput = elements.email;
@@ -111,45 +114,48 @@
 //   };
 //   console.log(data);
 // }
-// Конструктор FormData, который позволяет собрать информацию с форм
+// Конструктор FormData, который еще проще позволяет собрать информацию с форм
 // function handleSubmitWithFormData(event) {
 //   event.preventDefault();
 //   const formData = new FormData(event.currentTarget);
-//   const data = {};
-//   formData.forEach((value, name) => {
-//     console.log(`Name: ${name}, Value: ${value}`);
-//     data[name] = value;
-//   });
-//   console.log(data);
+// for (const entry of formData.entries()) {
+//   console.log(entry);
 // }
-const openModalBtn = document.querySelector('button[data-action="open-modal"]');
-const closeModalBtn = document.querySelector(
-  'button[data-action="close-modal"]',
-);
-const backdrop = document.querySelector('.js-backdrop');
-openModalBtn.addEventListener('click', openModal);
-closeModalBtn.addEventListener('click', closeModal);
-backdrop.addEventListener('click', handleBackdropClick);
+// const data = {};
+// formData.forEach((value, name) => {
+//   console.log(`Name: ${name}, Value: ${value}`);
+//   data[name] = value;
+// });
+// console.log(data);
+// }
+// const openModalBtn = document.querySelector('button[data-action="open-modal"]');
+// const closeModalBtn = document.querySelector(
+//   'button[data-action="close-modal"]',
+// );
+// const backdrop = document.querySelector('.js-backdrop');
+// openModalBtn.addEventListener('click', openModal);
+// closeModalBtn.addEventListener('click', closeModal);
+// backdrop.addEventListener('click', handleBackdropClick);
 
-function openModal() {
-  document.body.classList.add('show-modal');
-  window.addEventListener('keydown', handleKeyPress);
-}
-function closeModal() {
-  document.body.classList.remove('show-modal');
-  window.removeEventListener('keydown', handleKeyPress);
-}
-function handleBackdropClick(event) {
-  console.log(`Target: ${event.target}`);
-  console.log(`CurrentTarget: ${event.currentTarget}`);
-  if (event.target !== event.currentTarget) {
-    return;
-  }
-  closeModal();
-}
-function handleKeyPress(event) {
-  if (event.code !== 'Escape') {
-    return;
-  }
-  closeModal();
-}
+// function openModal() {
+//   document.body.classList.add('show-modal');
+//   window.addEventListener('keydown', handleKeyPress);
+// }
+// function closeModal() {
+//   document.body.classList.remove('show-modal');
+//   window.removeEventListener('keydown', handleKeyPress);
+// }
+// function handleBackdropClick(event) {
+//   console.log(`Target: ${event.target}`);
+//   console.log(`CurrentTarget: ${event.currentTarget}`);
+//   if (event.target !== event.currentTarget) {
+//     return;
+//   }
+//   closeModal();
+// }
+// function handleKeyPress(event) {
+//   if (event.code !== 'Escape') {
+//     return;
+//   }
+//   closeModal();
+// }
