@@ -27,18 +27,24 @@ function openModal(event) {
 function closeModal(event) {
   modalBox.classList.remove('is-open');
   window.removeEventListener('keydown', handleKeyPress);
+  modalBoxImage.setAttribute('src', '#');
+  modalBoxImage.setAttribute('alt', '');
 }
 function closeModalOverlay(event) {
   if (event.target !== event.currentTarget) {
     return;
   }
   closeModal();
+  modalBoxImage.setAttribute('src', '#');
+  modalBoxImage.setAttribute('alt', '');
 }
 function handleKeyPress(event) {
   if (event.code !== 'Escape') {
     return;
   }
   closeModal();
+  modalBoxImage.setAttribute('src', '#');
+  modalBoxImage.setAttribute('alt', '');
 }
 function createElement(item) {
   const galleryItem = `
