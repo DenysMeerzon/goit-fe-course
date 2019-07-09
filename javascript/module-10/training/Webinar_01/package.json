@@ -1,0 +1,20 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "build": "babel src -d lib"
+  },
+  "author": "Denys Meerzon <meerzondenis91@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2"
+  }
+}
