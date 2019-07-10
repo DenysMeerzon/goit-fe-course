@@ -9,7 +9,16 @@ const dataCloseModal = document.querySelector(
 );
 const modalOverlay = document.querySelector('.lightbox__content');
 
-galleryItems.forEach(galleryItem => createElement(galleryItem));
+function createGalleryItems(items) {
+  return items.reduce(
+    (allItems, item) => (allItems += createElement(item)),
+    '',
+  );
+}
+
+const galleryItemsMarkup = createGalleryItems(galleryItems);
+
+gallery.insertAdjacentHTML('afterbegin', galleryItemsMarkup);
 
 gallery.addEventListener('click', openModal);
 dataCloseModal.addEventListener('click', closeModal);
@@ -17,6 +26,9 @@ modalOverlay.addEventListener('click', closeModalOverlay);
 
 function openModal(event) {
   event.preventDefault();
+  if (event.target === event.currentTarget) {
+    return;
+  }
   modalBox.classList.add('is-open');
   const galleryItemSrcValue = event.target.getAttribute('data-source');
   const galleryItemAltValue = event.target.getAttribute('alt');
@@ -35,29 +47,25 @@ function closeModalOverlay(event) {
     return;
   }
   closeModal();
-  modalBoxImage.setAttribute('src', '#');
-  modalBoxImage.setAttribute('alt', '');
 }
 function handleKeyPress(event) {
   if (event.code !== 'Escape') {
     return;
   }
   closeModal();
-  modalBoxImage.setAttribute('src', '#');
-  modalBoxImage.setAttribute('alt', '');
 }
-function createElement(item) {
+function createElement({ original, preview, description }) {
   const galleryItem = `
 <li class="gallery__item">
   <a
     class="gallery__link"
-    href=${item.original}
+    href=${original}
   >
     <img
       class="gallery__image"
-      src=${item.preview}
-      data-source=${item.original}
-      alt=${item.description}
+      src=${preview}
+      data-source=${original}
+      alt=${description}
     />
 
     <span class="gallery__icon">
@@ -65,5 +73,5 @@ function createElement(item) {
     </span>
   </a>
 </li>`;
-  gallery.insertAdjacentHTML('afterbegin', galleryItem);
+  return galleryItem;
 }
