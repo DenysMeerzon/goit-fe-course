@@ -7,6 +7,7 @@ const modalBoxImage = document.querySelector('.lightbox___image');
 const dataCloseModal = document.querySelector(
   'button[data-action="close-lightbox"]',
 );
+
 const modalOverlay = document.querySelector('.lightbox__content');
 
 function createGalleryItems(items) {
